@@ -1,0 +1,48 @@
+name: Bug Report
+description: Something isn't working as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This tracker is for **ClassicUI Forever: LFG Forever**: its folder is `ClassicUIForever_LFGForever`. It needs ClassicUI Forever and LFG Forever.
+  - type: textarea
+    id: report
+    attributes:
+      label: What happened?
+      description: What you saw and what you expected instead. Say which tab of the window it is about.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to make it happen
+      description: How you opened the window and what you clicked, in order. Say if it was in combat.
+      placeholder: |
+        1. Open ...
+        2. Click ...
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: The versions of ClassicUI Forever, LFG Forever and this addon, from the addon list.
+    validations:
+      required: false
+  - type: textarea
+    id: errors
+    attributes:
+      label: Lua errors
+      description: |
+        If the game showed an error, paste the first one here. To see errors, type `/console scriptErrors 1`, or install BugSack and BugGrabber (both are needed).
+      render: text
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: A screenshot helps more than anything. Drag the image into this box.
+    validations:
+      required: false

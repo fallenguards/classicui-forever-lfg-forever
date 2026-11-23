@@ -1,3 +1,7 @@
+release.sh
+ziptest.sh
+cf_upload.py
+process_changelog.py
+release.conf
 *.zip
 dev/
-.claude/
