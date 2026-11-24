@@ -323,6 +323,9 @@ if MODE == "kit" then
     Check(not frame.WhoListingTab:IsShown(), "Hide Who side tab hides its Who tab too")
     Check(content.FilterPanel.TabSystem:IsShown() == false, "its own filter tabs out of sight")
     Check(calls.skins > 0, "old skins on its controls")
+    -- A drag of its title moves the spot it shares with the finder (2026-11-24: hidden, the window could not move).
+    Check(frame.DragBar:IsShown(), "its drag bar stays: the window can be dragged by its title")
+    Check(not frame.ResizeButton:IsShown(), "its grip off: the row sizes it")
     local sections = content.FilterPanel.FilterSections
     Check(sections[1]:GetParent() ~= content.FilterPanel, "the filter sections moved into the scroll")
     frame.WhoListingTab._mouseUp(frame.WhoListingTab, "LeftButton", true)

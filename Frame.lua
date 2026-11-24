@@ -151,9 +151,9 @@ local function ChromeOff(frame)
         if panel.NineSlice then panel.NineSlice:Hide() end
         if panel.Bg then panel.Bg:SetAlpha(0) end
     end
-    -- Its grip and drag bar off: the row places it, as our other windows.
+    -- Its grip off: the row sizes it, as our other windows. Its drag bar kept: a drag of it moves the spot it shares
+    -- with the group finder (ClassicUI Forever's Social/FinderTabs.lua), as a drag of the finder does.
     if frame.ResizeButton then frame.ResizeButton:Hide() end
-    if frame.DragBar then frame.DragBar:Hide() end
     if frame.CloseButton then kit.SkinCloseButton(frame.CloseButton) end
 end
 
