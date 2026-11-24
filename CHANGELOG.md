@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.1] - 2026-11-24
+
+### Fixed
+- LFG Forever's window can be dragged by its top again. It shares one spot with the Looking For Group window, so dragging either moves both (with ClassicUI Forever 0.65.0).
+
 ## [1.0.0] - 2026-11-23
 
 ### Added

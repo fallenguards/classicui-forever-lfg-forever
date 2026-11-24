@@ -2,7 +2,7 @@
 ## Title: ClassicUI Forever: LFG Forever
 ## Notes: LFG Forever's window in ClassicUI Forever's look: a double pane beside the Looking For Group window, one window at a time.
 ## Author: justawower
-## Version: 1.0.0
+## Version: 1.0.1
 ## X-Curse-Project-ID: 1825837
 ## Category: UI
 ## IconTexture: Interface\MainMenuBar\UI-MainMenuBar-EndCap-Dwarf
